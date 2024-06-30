@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location-Based Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Location-Based Game</h1>
+    </header>
+    <main>
+        <section id="geolocation">
+            <h2>Find Your Location</h2>
+            <button onclick="getLocation()">Get Current Location</button>
+            <p id="location"></p>
+        </section>
+        <section id="qr-scanner">
+            <h2>Scan QR Code</h2>
+            <div id="reader"></div>
+            <p id="qr-result">Scan a QR code to get started.</p>
+        </section>
+    </main>
+    <script src="js/html5-qrcode.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
